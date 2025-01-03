@@ -1,0 +1,104 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giặt sấy Cảnh Hương</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tiệm giặt sấy Cảnh Hương</h1>
+        <p>Dịch vụ giặt khô và giặt khô đáng tin cậy của bạn</p>
+    </header>
+    <nav>
+        <a href="#services">Dịch vụ</a>
+        <a href="#about">Về chúng tôi</a>
+        <a href="#contact">Liên hệ</a>
+        <a href="#testimonials">Đánh giá</a>
+        <a href="#faq">Câu hỏi thường gặp</a>
+    </nav>
+    <div class="hero">
+        <h1>Quần áo sạch, cuộc sống tươi mới!</h1>
+        <p>Trải nghiệm các dịch vụ giặt ủi tốt nhất phù hợp với nhu cầu của bạn.</p>
+    </div>
+    <section id="services" class="services">
+        <div class="service">
+            <img src="wash_fold_icon.png" alt="Giặt" class="service-icon">
+            <h3>Giặt</h3>
+            <p>Giải pháp hiệu quả và giá cả phải chăng cho nhu cầu giặt giũ hàng ngày của bạn.</p>
+        </div>
+        <div class="service">
+            <img src="dry_cleaning_icon.png" alt="Sấy" class="service-icon">
+            <h3>Sấy</h3>
+            <p>Chăm sóc đặc biệt cho trang phục tinh tế và chuyên nghiệp của bạn.</p>
+        </div>
+        <div class="service">
+            <img src="pickup_delivery_icon.png" alt="Nhận và giao hàng" class="service-icon">
+            <h3>Nhận và giao hàng</h3>
+            <p>Thuận tiện nhất! Lên lịch nhận và giao hàng của bạn mọi lúc mọi nơi.</p>
+        </div>
+    </section>
+    <section id="testimonials" class="testimonials">
+        <h2>Khách hàng của chúng tôi nói gì</h2>
+        <div class="testimonial">
+            <img src="jane_doe.jpg" alt="Jane Doe" class="testimonial-img">
+            <p>"Giặt sấy Cảnh Hương luôn vượt quá sự mong đợi của tôi. Dịch vụ tuyệt vời!"</p>
+            <span>- Jane Doe</span>
+        </div>
+        <div class="testimonial">
+            <img src="john_smith.jpg" alt="John Smith" class="testimonial-img">
+            <p>"Dịch vụ nhận hàng và giao hàng là yếu tố thay đổi cuộc chơi cho lịch trình bận rộn của tôi."</p>
+            <span>- John Smith</span>
+        </div>
+    </section>
+    <section id="faq" class="faq">
+        <h2>Câu hỏi thường gặp</h2>
+        <div class="faq-item">
+            <h3>Giờ hoạt động của bạn là gì?</h3>
+            <p>Chúng tôi mở cửa từ 7:00 sáng đến 9:00 tối tất cả các ngày trong tuần.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Bạn có cung cấp dịch vụ trong ngày không?</h3>
+            <p>Vâng, chúng tôi làm vậy! Đem đồ giặt của bạn đến trước 10:00 sáng để nhận dịch vụ trong ngày.</p>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Liên hệ</h2>
+        <p>Email: info@sparklinglaundry.com</p>
+        <p>Phone: 0367123568</p>
+        <p>Địa chỉ: Xóm 3 xã Gia Phố, huyện Hương Khê, tỉnh Hà Tĩnh</p>
+        <p>(đối diện Đài Tưởng niệm liệt sỹ xã Gia Phố)</p>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7580.798561728461!2d105.69353951899626!3d18.19156641771658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3139ab001ff03a91%3A0x578d988e30caaa6c!2zVGnhu4dtIGdp4bq3dCBz4bqleSBD4bqjbmggSMawxqFuZw!5e0!3m2!1svi!2s!4v1735886336562!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="image-slider">
+            <div class="slider-images">
+                <img src="./image/236557300_1498662440483769_150721992726832255_n.jpg" alt="Our Store 1" class="slide active">
+                <img src="./image/220315926_1498662383817108_2996862399992594214_n.jpg" alt="Our Store 2" class="slide">
+                <img src="./image/236628829_1498665747150105_8784372063130624424_n.jpg" alt="Our Store 3" class="slide">
+            </div>
+            <div class="dots-container">
+                <span class="dot active" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+    <section class="feedback">
+        <h2>Send Us Your Feedback</h2>
+        <form id="feedbackForm">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" rows="5" placeholder="Your Feedback" required></textarea>
+            <button type="submit">Send Feedback</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy;2025 by Hungns COPYRIGHT ALL RIGHT RESERVED.</p>
+    </footer>
+    <script src="./test.js"></script>
+</body>
+</html>
